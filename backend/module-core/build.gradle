@@ -1,6 +1,21 @@
+plugins {
+    id 'java'
+    // 스프링 부트 버전을 3.2.x 이상으로 유지하신다면 아래 버전을 추천합니다.
+    id 'org.springframework.boot' version '3.2.5'
+    // 이 부분이 핵심입니다! 1.1.5 이상으로 올려주세요.
+    id 'io.spring.dependency-management' version '1.1.5'
+}
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation project(':module-common')
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.postgresql:postgresql'
 }
+
+// core 모듈은 라이브러리 용도이므로 빌드 설정을 추가합니다.
+bootJar { enabled = false }
+jar { enabled = true }
