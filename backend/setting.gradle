@@ -1,0 +1,5 @@
+rootProject.name = 'mland-queue-backend'
+
+include 'module-api'
+include 'module-core'
+include 'module-common'
