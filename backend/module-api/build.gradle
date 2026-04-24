@@ -1,6 +1,8 @@
 dependencies {
+    // 수정된 부분: :backend: 를 추가합니다.
     implementation project(':module-core')
     implementation project(':module-common')
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'

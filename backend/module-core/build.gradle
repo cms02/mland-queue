@@ -1,6 +1,13 @@
 dependencies {
-    implementation project(':module-common')
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    dependencies {
+        // implementation 대신 api를 사용해야 이 모듈을 쓰는 다른 모듈(api)에서도 JPA를 인식합니다.
+        api 'org.springframework.boot:spring-boot-starter-data-jpa'
+        api 'org.springframework.boot:spring-boot-starter-data-redis'
+
+        implementation project(':module-common')
+        runtimeOnly 'org.postgresql:postgresql'
+    }
 }
+
+bootJar { enabled = false }
+jar { enabled = true }

@@ -7,9 +7,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/backend/module-api" />
+            <option value="$PROJECT_DIR$/backend/module-common" />
+            <option value="$PROJECT_DIR$/backend/module-core" />
           </set>
         </option>
-        <option name="myGradleHome" value="" />
       </GradleProjectSettings>
     </option>
   </component>
