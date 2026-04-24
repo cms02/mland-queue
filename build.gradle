@@ -1,20 +1,37 @@
 plugins {
-    id 'java'
+    id 'org.springframework.boot' version '3.2.5' apply false
+    id 'io.spring.dependency-management' version '1.1.5' apply false
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+subprojects {
+    group = 'com.mapleland'
+    version = '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    }
+
+    tasks.named('test') {
+        useJUnitPlatform()
+    }
 }
 
-dependencies {
-    testImplementation platform('org.junit:junit-bom:6.0.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-}
-
-test {
-    useJUnitPlatform()
-}
+// 핵심 수정: 루트 프로젝트에는 스프링 플러그인이 없으므로 bootJar 설정 자체를 삭제합니다.
+// 대신 각 모듈(core, common)에서 개별적으로 끄는 설정을 적용하겠습니다.

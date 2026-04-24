@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -8,15 +7,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-          </set>
-        </option>
-        <option name="myGradleHome" value="" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/backend/module-api" />
             <option value="$PROJECT_DIR$/backend/module-common" />
             <option value="$PROJECT_DIR$/backend/module-core" />
