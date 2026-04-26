@@ -6,16 +6,11 @@ build/
 .kotlin
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/                # .idea 폴더 전체를 무시 (권장)
 *.iws
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
 ### Eclipse ###
 .apt_generated
