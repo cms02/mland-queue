@@ -1,3 +1,8 @@
+plugins {
+    id 'java-library'  // 이게 있어야 'api' 키워드가 동작하고 의존성이 전파됩니다!
+    // ... 기타 플러그인들
+}
+
 dependencies {
     dependencies {
         // implementation 대신 api를 사용해야 이 모듈을 쓰는 다른 모듈(api)에서도 JPA를 인식합니다.
