@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af8ffd04-463e-4e47-8a5f-0d3df781a828" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/presentation/AuthenticationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/character/controller/CharacterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/character/dto/CharacterCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/character/dto/CharacterSelectResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/character/dto/CharacterUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-core/src/main/java/com/mapleland/core/character/domain/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-core/src/main/java/com/mapleland/core/character/repository/CharacterRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/module-core/src/main/java/com/mapleland/core/character/service/CharacterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/security/handler/OAuth2SuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/security/handler/OAuth2SuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api/auth/security/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/module-common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/module-common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +41,26 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="mland-queue-backend" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mland-queue-backend" type="f1a62948:ProjectNode" />
+                <item name="module-api" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mland-queue-backend" type="f1a62948:ProjectNode" />
+                <item name="module-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -39,15 +69,27 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/cms02/mland-queue.git",
-    "accountId": "6cb71590-b097-4de8-9fae-3290700a9a38"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cms02/mland-queue.git&quot;,
+    &quot;accountId&quot;: &quot;6cb71590-b097-4de8-9fae-3290700a9a38&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build mland-queue.executor": "Run",
@@ -57,9 +99,31 @@
     "RequestMappingsPanelWidth1": "75",
     "Spring Boot.ApiApplication.executor": "Debug",
     "git-widget-placeholder": "develop",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "last_opened_file_path": "/Users/mschu/lab/mland-queue/backend/module-core/src/main/java/com/mapleland/core/character",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.jsOptions"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/module-core/src/main/java/com/mapleland/core/character" />
+      <recent name="$PROJECT_DIR$/backend/module-api/src/main/java/com/mapleland/api" />
+      <recent name="$PROJECT_DIR$/backend/module-api/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mapleland.api.character.dto" />
+      <recent name="com.mapleland.common.enums" />
+      <recent name="com.mapleland.api.auth" />
+      <recent name="com.mapleland.core.infrastructure.config" />
+      <recent name="com.mapleland.core.infrastructure.auth" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mland-queue.module-common" />
@@ -73,6 +137,11 @@
       <method v="2" />
     </configuration>
     <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="DISCORD_CLIENT_ID" value="1506847048761344125" />
+        <env name="DISCORD_CLIENT_SECRET" value="dP44JtOkt-yZtsEUZ8tX3phgdn7XIT2r" />
+        <env name="JWT_SECRET" value="mlandqueueprojectjwtsecretkeylocaltest2026ffffff" />
+      </envs>
       <module name="mland-queue.module-api.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mapleland.api.ApiApplication" />
       <method v="2">
@@ -105,5 +174,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

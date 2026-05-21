@@ -48,3 +48,9 @@ jwt:
   secret: ${JWT_SECRET:임시로사용할32바이트이상의로컬용비밀키문자열입니다!}
   access-token-expire-length: 3600000       # 1시간
   refresh-token-expire-length: 1209600000   # 14일
+
+
+# core 모듈 혹은 application.yml
+app:
+  policy:
+    max-character-count: 5
