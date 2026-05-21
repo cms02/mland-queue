@@ -1,4 +1,4 @@
-package com.mapleland.api.security.jwt;
+package com.mapleland.api.auth.security.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;

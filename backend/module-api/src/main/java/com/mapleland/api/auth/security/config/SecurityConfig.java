@@ -1,8 +1,8 @@
-package com.mapleland.api.security.config;
+package com.mapleland.api.auth.security.config;
 
-import com.mapleland.api.security.handler.OAuth2SuccessHandler;
-import com.mapleland.api.security.jwt.JwtAuthenticationFilter;
-import com.mapleland.api.security.jwt.JwtTokenProvider;
+import com.mapleland.api.auth.security.handler.OAuth2SuccessHandler;
+import com.mapleland.api.auth.security.jwt.JwtAuthenticationFilter;
+import com.mapleland.api.auth.security.jwt.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

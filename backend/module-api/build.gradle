@@ -1,3 +1,7 @@
+plugins {
+    id 'java-library' // api 구성을 사용하기 위해 플러그인 추가 필요
+}
+
 dependencies {
     // 수정된 부분: :backend: 를 추가합니다.
     implementation project(':module-core')

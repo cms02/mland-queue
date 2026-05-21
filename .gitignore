@@ -5,6 +5,9 @@ build/
 !**/src/test/**/build/
 .kotlin
 
+# 민감정보 파일 깃 제외
+src/main/resources/application-secret.yml
+
 ### IntelliJ IDEA ###
 .idea/                # .idea 폴더 전체를 무시 (권장)
 *.iws

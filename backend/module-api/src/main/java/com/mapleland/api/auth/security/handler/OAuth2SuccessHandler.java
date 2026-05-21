@@ -1,6 +1,6 @@
-package com.mapleland.api.security.handler;
+package com.mapleland.api.auth.security.handler;
 
-import com.mapleland.api.security.jwt.JwtTokenProvider;
+import com.mapleland.api.auth.security.jwt.JwtTokenProvider;
 import com.mapleland.core.user.domain.User;
 import com.mapleland.core.user.repository.UserRepository;
 import jakarta.servlet.ServletException;

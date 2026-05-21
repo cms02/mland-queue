@@ -1,6 +1,6 @@
-package com.mapleland.api.controller;
+package com.mapleland.api.auth.controller;
 
-import com.mapleland.api.security.jwt.JwtTokenProvider;
+import com.mapleland.api.auth.security.jwt.JwtTokenProvider;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
